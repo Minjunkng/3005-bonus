@@ -1,22 +1,22 @@
 {
-  "UTC_time": "2026-09-29T14:15:40.099437+00:00",
-  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "UTC_time": "2026-09-30T18:38:59.062925+00:00",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
   "architecture": "x86_64",
-  "CPU_model": "unknown",
-  "logical_CPU_count": 9,
-  "language_runtime": "openjdk version \"17.0.20\" 2026-07-21",
-  "compiler": "javac 17.0.20",
+  "CPU_model": "12th Gen Intel(R) Core(TM) i5-12500H",
+  "logical_CPU_count": 16,
+  "language_runtime": "openjdk version \"17.0.20.1\" 2026-08-18",
+  "compiler": "javac 17.0.20.1",
   "flags": "javac -encoding UTF-8 -d build; OpenJDK 17 HotSpot default JIT",
   "generator": "src/GenerateData.java (Java 17)",
-  "python_benchmark_driver_version": "3.12.14",
+  "python_benchmark_driver_version": "3.12.3",
   "timing": "System.nanoTime around evaluation only; excludes loading and printing",
   "size_repetitions": "join: median of three timed runs per size, each after one warmup evaluation; select/project: median of seven per-query batch means of 50 executions after three warmups each",
   "match_rate_repetitions": "median of three timed runs after one warmup evaluation each",
   "generator_seed": 3005,
   "target_match_rate": 0.05,
   "slopes": {
-    "join_wall_seconds": 1.684335180176283,
-    "select_wall_seconds": 0.6056756417456214,
-    "project_wall_seconds": 0.6850510317829712
+    "join_wall_seconds": 1.71494134486084,
+    "select_wall_seconds": 0.679967918621698,
+    "project_wall_seconds": 0.7193274304098163
   }
 }

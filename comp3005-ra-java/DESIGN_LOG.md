@@ -33,3 +33,7 @@ I adapted the prior demonstration outline to the Java commands and new report me
 ### 2026-09-29 — Finish the data generator in Java and repeat timings
 
 The assignment counts the data generator as source, so I rewrote it in Java and had the benchmark driver invoke that Java class. A first rerun showed volatile single join timings under JVM compilation; I changed the driver to take the median of three independently warmed runs for each join size. The final CSV, report, plot, and regenerated narration use the repeated Java measurements, including the 6.730319568-second median at 64,000 rows per side.
+
+### 2026-09-30 — Diagnose the benchmark plotting dependency
+
+I clarified that `python3 tools/benchmark.py` is a shell command, not a `make` target. The benchmark completed its measurements and wrote its CSV outputs, then stopped when it imported the optional `matplotlib` plotting dependency. The WSL Python has neither `pip` nor `ensurepip`, and installing the distro package requires sudo access, so the plot and updated metadata remain ungenerated. I checked Git status without staging, restoring, or removing the existing local changes.
